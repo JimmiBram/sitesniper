@@ -8,10 +8,17 @@ authors = [
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
+    "rich",
 ]
 
 [tool.poetry]
 packages = [{include = "sitesniper", from = "src"}]
+
+[tool.poetry.scripts]
+sniper = "sitesniper.main:main"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
