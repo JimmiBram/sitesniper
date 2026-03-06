@@ -8,7 +8,10 @@ authors = [
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
+    "playwright",
+    "prompt_toolkit",
     "rich",
+    "rich-pixels",
 ]
 
 [tool.poetry]

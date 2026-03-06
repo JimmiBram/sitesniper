@@ -20,3 +20,6 @@ SiteSniper, console based image grapper and crawler
 
 
 ## When we do planning, we always create a <planname>.md in /docs/plans
+
+## Executing Plans
+NEVER EVER CHECK IN TO GIT, I will do that.
