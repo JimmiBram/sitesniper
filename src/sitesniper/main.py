@@ -9,5 +9,5 @@ def main() -> None:
     renderable = build_live_renderable(
         url="", depth=1, max_pages=10, status="Ready"
     )
-    with Live(renderable, refresh_per_second=4) as live:
+    with Live(renderable, refresh_per_second=4) as _:
         time.sleep(3)

@@ -8,7 +8,7 @@ def build_live_renderable(
     depth: int,
     max_pages: int,
     status: str,
-):
+) -> Layout:
     """Return a Rich renderable (Layout) for Live display: image area, controls, status."""
     layout = Layout()
     layout.split_column(
