@@ -1,6 +1,13 @@
-from sitesniper.ui import build_layout_text
+import time
+
+from rich.live import Live
+
+from sitesniper.ui import build_live_renderable
 
 
 def main() -> None:
-    text = build_layout_text(url="", depth=1, max_pages=10, status="Ready")
-    print(text)
+    renderable = build_live_renderable(
+        url="", depth=1, max_pages=10, status="Ready"
+    )
+    with Live(renderable, refresh_per_second=4) as live:
+        time.sleep(3)
